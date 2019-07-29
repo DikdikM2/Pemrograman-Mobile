@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="5dp"
+            android:src="@drawable/logo1" />
+
+        <Button
+            android:id="@+id/btup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="takePicture"
+            android:text="Upload Foto"
+            android:textColor="#ffffff"
+            android:textSize="14dp" />
+        <TextView
+            android:id="@+id/bebas"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TAMBAH DATA MAHASISWA"
+            android:textStyle="bold"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp">
+        </TextView>
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukan Nomor Induk Mahasiswa"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp">
+        </TextView>
+        <EditText
+            android:id="@+id/editText_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:inputType="phone"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:phoneNumber="true">
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Masukan Nama Mahasiswa"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp"></TextView>
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp"
+            android:ems="10">
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp">
+
+        <Button
+            android:id="@+id/but_in"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:onClick="but_inClick"
+            android:layout_gravity="right"
+            android:text="Tambah"></Button>
+
+        <Button
+            android:id="@+id/but_Edit"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:onClick="but_EditClick"
+            android:text="Edit"></Button>
+
+        <Button
+            android:id="@+id/but_delete"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:onClick="but_DelClick"
+            android:layout_gravity="top|right"
+            android:text="Hapus"></Button>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_horizontal"
+        android:text="DATA MAHASISWA"
+        android:textSize="12dp"
+        android:textStyle="bold"></TextView>
+
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
